@@ -1,8 +1,24 @@
+/*
+  File:     large_value_types_out_of_row.sql
+
+  SQL Server Versions: 2008R2 onwards
+
+  Written by Pedro Bonilla
+  For more scripts and sample code, check out https://bonisql.wordpress.com/   
+  
+  This code and information are provided "as is" without warranty of 
+  any kind, either expressed or implied, including but not limited 
+  to the implied warranties of merchantability and/or fitness for a
+  particular purpose.
+*/
 
 -- Clean buffers and cache
 DBCC DROPCLEANBUFFERS;
 DBCC FREEPROCCACHE;
 GO
+
+-- You can download the AdventureWorks2014 database from
+-- https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms#download-backup-files
 USE AdventureWorks2014;
 GO
 
